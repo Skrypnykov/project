@@ -6,9 +6,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<title>MoGo</title>
+
+	<title>MoGo Free</title>
 </head>
 <body>
 	<header class="header-container">
@@ -27,6 +26,7 @@
 			</nav>
 		</div>
 	</header>
+
 	<section class="banner">
 		<div class="background-image" style="background-image: url(img/bg-banner.png);"></div>
 		<div class="slider">
@@ -43,7 +43,8 @@
 				<li class="slider-item"><span class="slider-item-number">04</span> Contacts</li>
 			</ul>
 		</div>
-	</section>
+	</section> <!-- end section banner -->
+
 	<section class="about-us">
 		<h4 class="section-title">What we do</h4>
 		<h3 class="section-heading">Story about us</h3>
@@ -100,7 +101,7 @@
 				<p class="facts-description">Members</p>
 			</div>
 		</div>
-	</section>
+	</section><!-- end section about us -->
 
 	<section class="service">
 		<h4 class="section-title">We work with</h4>
@@ -155,7 +156,8 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> <!-- end section service -->
+
 	<section class="feauture">
 		<div class="background-image" style="background-image: url(img/bg-feauture.png);"></div>
 		<h4 class="section-title">For all devices</h4>
@@ -165,45 +167,101 @@
 			<img src="img/feauture-display.png" alt="" class="feauture-img-display">
 			<img src="img/feauture-white.png" alt="" class="feauture-img-white">
 		</div>
-	</section>
+	</section> <!-- end section feauture -->
+
 	<section class="service2">
 		<h4 class="section-title">Service</h4>
 		<h3 class="section-heading">What we do</h3>
 		<hr class="section-line" noshade>
 		<p class="service2-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<div class="service2-list">
-			<div class="service2-wrapper">
-				<img src="img/service2_1.png" alt="" class="service2-item-img">
-				<ul class="service2-list">
-					<li class="service2-item">
-						<div class="service2-item-title-wrapper">
-							<img src="img/service2-picture.png" alt="" class="service2-item-icon">
-							<h5 class="service2-item-title">Photography</h5>
+		
+		<div class="service2-content-wrapper">
+			<img src="img/service2_1.png" alt="" class="service2-img">
+				
+			<div class="service2-accordion">
+				<ul class="accordion">
+					<li class="accordion-item">
+						<input type="radio" name="service2"class="accordion-toggle" id="toggle-01" hidden checked>
+						<label class="accordion-trigger" for="toggle-01">
+							<img src="img/service2-picture.png" alt="" class="accordion-item-icon">Photography</label>
+						<img src="img/chevron.png" alt="" class="accordion-checkbox-arrow">
+						<div class="accordion-target">
+							<div class="accordion-item-content">
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis itaque ducimus libero impedit sequi. Excepturi architecto labore similique sit et, ipsa delectus saepe nam sunt debitis dicta veniam dolore eos.</p>
+							</div>
 						</div>
-						<p class="service2-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</li>
-					<li class="service2-item">
-						<div class="service2-item-title-wrapper">
-							<img src="img/service2-equalizer.png" alt="" class="service2-item-icon">
-							<h5 class="service2-item-title">Creativity</h5>
+					<li class="accordion-item">
+						<input type="radio" name="service2"class="accordion-toggle" id="toggle-02" hidden>
+						<label class="accordion-trigger" for="toggle-02">
+							<img src="img/service2-equalizer.png" alt="" class="accordion-item-icon">CREATIVITY</label>
+						<img src="img/chevron.png" alt="" class="accordion-checkbox-arrow">
+						<div class="accordion-target">
+							<div class="accordion-item-content">
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
 						</div>
-						<p class="service2-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</li>
-					<li class="service2-item">
-						<div class="service2-item-title-wrapper">
-							<img src="img/service2-bullseye.png" alt="" class="service2-item-icon">
-							<h5 class="service2-item-title">Web design</h5>
+					<li class="accordion-item">
+						<input type="radio" name="service2"class="accordion-toggle" id="toggle-03" hidden>
+						<label class="accordion-trigger" for="toggle-03">
+							<img src="img/service2-bullseye.png" alt="" class="accordion-item-icon">WEB DESIGN</label>
+						<img src="img/chevron.png" alt="" class="accordion-checkbox-arrow">
+						<div class="accordion-target">
+							<div class="accordion-item-content">
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
 						</div>
-						<p class="service2-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</li>
 				</ul>
 			</div>
 		</div>
+	</section> <!-- end section service2  -->
 
-		<div class="quote">
-					
-		</div>
-	</section>
+	<section class="quote">
+			<div class="carousel">
+			    <div class="carousel-inner">
+			        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+			        <div class="carousel-item">
+			        	<div class="carousel-item-wrapper">
+		            		<img src="img/quota-speech-4.png" alt="" class="carousel-item-img">
+		            		<div class="carousel-blockquote">
+		            			<blockquote class="carousel-item-content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</blockquote>
+		            			<span class="carousel-item-author">Jon Doe</span>	
+		            		</div>
+		            	</div>
+			        </div>
+			        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+			          <div class="carousel-item">
+			        	<div class="carousel-item-wrapper">
+		            		<img src="img/quota-speech-4.png" alt="" class="carousel-item-img">
+		            		<div class="carousel-blockquote">
+		            			<blockquote class="carousel-item-content">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi iure, tenetur laudantium perspiciatis est a quam unde modi in minima quae maiores itaque aliquam hic vel sequi. Perferendis, nihil."</blockquote>
+		            			<span class="carousel-item-author">Agatha Christie</span>	
+		            		</div>
+		            	</div>
+			        </div>
+			        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+			      	<div class="carousel-item">
+			        	<div class="carousel-item-wrapper">
+		            		<img src="img/quota-speech-4.png" alt="" class="carousel-item-img">
+		            		<div class="carousel-blockquote">
+		            			<blockquote class="carousel-item-content">"Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Quas, consequuntur voluptatibus dignissimos sit? Hic a officia aperiam animi non vero possimus sapiente atque accusantium id. Explicabo harum accusantium dignissimos sed."</blockquote>
+		            			<span class="carousel-item-author">James Fenimore Cooper</span>	
+		            		</div>
+		            	</div>
+			        </div>
+			        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+			        <label for="carousel-2" class="carousel-control next control-1">›</label>
+			        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+			        <label for="carousel-3" class="carousel-control next control-2">›</label>
+			        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+			        <label for="carousel-1" class="carousel-control next control-3">›</label>
+			    </div>
+			</div>	
+	</section> <!-- end section quote  -->
+
 	<section class="our-team">
 		<h4 class="section-title">Who we are</h4>
 		<h3 class="section-heading">Meet our team</h3>
@@ -211,8 +269,9 @@
 		<div class="logos">
 			
 		</div>
-	</section>
-	<section class="work">
+	</section> <!-- end section our-team -->
+
+	<!--<section class="work">
 		<h4 class="section-title">What we do</h4>
 		<h3 class="section-heading">Some of our work</h3>
 		<hr class="section-line" noshade>
@@ -236,7 +295,7 @@
 	<footer class="footer">
 		
 	</footer>
-
+	-->
 	<script src="js/script.js"></script>
  
 </body>
