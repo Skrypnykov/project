@@ -7,6 +7,8 @@
 	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 
 	<title>MoGo Free</title>
 </head>
@@ -30,20 +32,33 @@
 
 	<section class="banner">
 		<div class="background-image" style="background-image: url(img/bg/bg-banner.png);"></div>
-		<div class="slider">
-			<h2 class="slider-title">Creative Template</h2>
-			<h1 class="slider-slogan">Welcome <br/>to MoGo</h1>
-			<hr class="slider-line" noshade>
-			<a class="slider-button" href="#">Learn more</a>
+		
+		<div class="slider owl-carousel owl-theme owl-loaded" id="slider">
+			<div class="owl-stage-outer">
+        		<div class="slider-list owl-stage">
+					<div class="slider-item owl-item">
+						<h2 class="slider-item-title">Creative Template</h2>
+						<h1 class="slider-item-slogan">Welcome <br/>to MoGo</h1>
+						<hr class="slider-item-line">
+						<a class="slider-item-button" href="#">Learn more</a>
+					</div>
+					<div class="slider-item owl-item">02 WORK</div>
+					<div class="slider-item owl-item">03 ABOUT</div>
+					<div class="slider-item owl-item">04 CONTACTS</div>
+				</div>
+			</div>
+			<!--<div class="owl-nav">
+        		<div class="owl-prev">prev</div>
+        		<div class="owl-next">next</div>
+    		</div>
+    		 <div class="owl-dots">
+		        <div class="owl-dot active"><span></span></div>
+		        <div class="owl-dot"><span></span></div>
+		        <div class="owl-dot"><span></span></div>
+		        <div class="owl-dot"><span></span></div>
+    		</div>-->
 		</div>
-		<div class="slider-list-wrapper">
-			<ul class="slider-list">
-				<li class="slider-item"><span class="slider-item-number">01</span> Intro</li>
-				<li class="slider-item"><span class="slider-item-number">02</span> Work</li>
-				<li class="slider-item"><span class="slider-item-number">03</span> About</li>
-				<li class="slider-item"><span class="slider-item-number">04</span> Contacts</li>
-			</ul>
-		</div>
+
 	</section> <!-- end section banner -->
 
 	<section class="about-us">
@@ -553,10 +568,74 @@
 	</section>
 	
 	<footer class="footer">
-		
+		<div class="footer-wrapper">
+			<div class="footer-info">
+				<h4 class="footer-info-title">MoGo</h4>
+				<p class="footer-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+				<div class="footer-info-follow">
+					<p class="info-follow-all"><span class="info-follow-quantity">15k</span> followers</p>
+					<div class="info-follow-us-wrapper">
+						<p class="info-follow-us">Follow Us:</p>
+						<a href="" class="info-follow-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="" class="info-follow-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="" class="info-follow-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a href="" class="info-follow-link"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+						<a href="" class="info-follow-link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="" class="info-follow-link"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+						<a href="" class="info-follow-link"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+						<a href="" class="info-follow-link"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+					</div>
+					<form action="" class="info-form">
+						<input class="info-form-input" type="text" placeholder="Your Email..."><input class="info-form-button" type="submit" value="Subscribe">
+					</form>
+				</div>
+			</div>
+			<div class="footer-blogs">
+				<h4 class="footer-blogs-title">Blogs</h4>
+				<div class="footer-blogs-item">
+					<img class="footer-blogs-img" src="img/footer/blogs_1.png" alt="">
+					<div class="footer-blogs-content-wrapper">
+						<p class="footer-blogs-content">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+						<span class="footer-blogs-date">Jan 9, 2016</span>
+					</div>
+				</div>
+				<div class="footer-blogs-item">
+					<img class="footer-blogs-img" src="img/footer/blogs_2.png" alt="">
+					<div class="footer-blogs-content-wrapper">
+						<p class="footer-blogs-content">Consectetur adipiscing elit, sed do eiusmod tempor</p>
+						<span class="footer-blogs-date">Jan 9, 2016</span>
+					</div>
+				</div>
+				<div class="footer-blogs-item">
+					<img class="footer-blogs-img" src="img/footer/blogs_3.png" alt="">
+					<div class="footer-blogs-content-wrapper">
+						<p class="footer-blogs-content">sed do eiusmod tempor incididunt ut labore</p>
+						<span class="footer-blogs-date">Jan 9, 2016</span>
+					</div>
+				</div>
+			</div>
+			<div class="footer-instagram">
+				<h4 class="footer-instagram-title">Instagram</h4>
+				<div class="footer-instagram-wrapper">
+					<a href="" class="footer-instagram-link"><img src="img/footer/instagram_1.png" alt="" class="footer-instagram-img"></a>
+					<a href="" class="footer-instagram-link"><img src="img/footer/instagram_2.png" alt="" class="footer-instagram-img"></a>
+					<a href="" class="footer-instagram-link"><img src="img/footer/instagram_3.png" alt="" class="footer-instagram-img"></a>
+					<a href="" class="footer-instagram-link"><img src="img/footer/instagram_4.png" alt="" class="footer-instagram-img"></a>
+					<a href="" class="footer-instagram-link"><img src="img/footer/instagram_5.png" alt="" class="footer-instagram-img"></a>
+					<a href="" class="footer-instagram-link"><img src="img/footer/instagram_6.png" alt="" class="footer-instagram-img"></a>
+					<a href="" class="footer-instagram-link"><img src="img/footer/instagram_7.png" alt="" class="footer-instagram-img"></a>
+					<a href="" class="footer-instagram-link"><img src="img/footer/instagram_8.png" alt="" class="footer-instagram-img"></a>
+					<a href="" class="footer-instagram-link"><img src="img/footer/instagram_9.png" alt="" class="footer-instagram-img"></a>
+				</div>
+				<a href="" class="footer-instagram-view">View more photos</a>
+			</div>
+		</div>
+		<div class="footer-copyright">© 2016 MoGo free PSD template by <span class="footer-copyright-highlighting">Laaqiq</span></div>	
 	</footer>
-
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
- 
 </body>
 </html>
