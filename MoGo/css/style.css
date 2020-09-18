@@ -183,35 +183,23 @@ section {
 	border: 3px solid #fce38a;
 	color:  #fce38a;
 }
-/*
-.slider-list-wrapper {
-	margin-top: 155px;
-	margin-bottom: 27px;
-}
-.slider-list {
-	display: flex;
-}
-.slider-item {
-	width: 280px;
-	list-style: none;
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: uppercase;
-	border-top: 3px solid #ffffff;
-	padding-top: 25px;
-}
-.slider-item-number {
-	font-size: 24px;
-	font-weight: 700;
-}
-.slider-item:not(:last-child) {
-	margin-right: 30px;
-}*/
 
-.owl-dots {
-	height: 50px;
-	color: #000
+
+/* owlCarousel dots */
+.owl-theme .owl-dots .owl-dot span {
+	border-radius: 0;
+	width: 280px;
+  	height: 3px;
+    margin-left: 15px;
+	margin-right: 15px;
+	background-color: #ffffff;
+	opacity: 0.5;
+	border:none; 
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots.clickable .owl-dot span:hover {
+  	background-color: #f38181;
+  	border-color: none;
 }
 
 /* section about-us */
