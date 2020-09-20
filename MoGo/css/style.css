@@ -141,17 +141,16 @@ section {
 	justify-content: center;
 	align-items: center;
 }
-
 .slider-item {
 	color: #fff;
 	margin: 100px 0;
+	cursor: grab;
 }
 .slider-item-title {
 	font-family: "Kaushan Script";
 	font-size: 72px;
 	font-weight: 400;
 	margin-bottom: 40px;
-	
 }
 .slider-item-slogan {
 	font-family: Montserrat;
@@ -164,7 +163,7 @@ section {
 .slider-item-line {
 	margin: 0 auto;
 	width: 60px;
-	height: 4px;
+	height: 3px;
 	background-color: #ffffff;
 	margin-bottom: 50px;
 	border: 0;
@@ -183,10 +182,13 @@ section {
 	border: 3px solid #fce38a;
 	color:  #fce38a;
 }
-
-
 /* owlCarousel dots */
+.owl-theme .owl-dots .owl-dot {
+	outline: none;
+}
 .owl-theme .owl-dots .owl-dot span {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
 	border-radius: 0;
 	width: 280px;
   	height: 3px;
@@ -194,12 +196,10 @@ section {
 	margin-right: 15px;
 	background-color: #ffffff;
 	opacity: 0.5;
-	border:none; 
 }
 .owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots.clickable .owl-dot span:hover {
+.owl-theme .owl-dots .owl-dot:hover span {
   	background-color: #f38181;
-  	border-color: none;
 }
 
 /* section about-us */
@@ -221,7 +221,6 @@ section {
 	margin-top: 101px;
 	display: flex;
 }
-
 .img-wrapper{
 	position: relative;
 }
@@ -286,7 +285,6 @@ section {
 	font-weight: 400;
 	text-transform: uppercase;
 }
-
 @media (max-width: 700px){
 	.about-us-story {
 		flex-direction: column;	
@@ -680,7 +678,6 @@ section {
 	background-color: #f38181;
 	border: 1px solid #95e1d3;
 }
-
 .logos {
 	background-color: #f8f8f8;
 	padding: 50px 0;
@@ -701,7 +698,6 @@ section {
 	max-width: 955px;
 	text-align: center;
 }
-
 .work-samples {
 	margin-top: 100px;
 	column-count: 4; /* Определяет количество колонок в многоколоночном тексте.*/
@@ -753,7 +749,6 @@ section {
 	font-style: italic;
 	font-size: 15px;
 	font-weight: 200;
-
 }
 .work-img-hover {
 	display: none;
@@ -815,7 +810,6 @@ section {
     width: 60px;
     margin-right: 10px;
     transform: translateY(-5px);
-	
 }
 
 /* testimonial carusel control */
@@ -851,8 +845,6 @@ section {
     display: block;
 }
 
-
-
 /* section happy-clients */
 .happy-clients {
 	position: relative;
@@ -885,7 +877,6 @@ section {
 	max-width: 515px;
 	margin-bottom: 70px;
 	display: flex;
-	-justify-content: flex-start;
 	align-items: flex-start;
 }
 .happy-client-item:nth-child(2n+1) {
@@ -952,8 +943,6 @@ section {
 	position: absolute;
 	bottom: 15px;
 	left: -10px;
-
-	display: inline-block;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1015,7 +1004,6 @@ section {
 }
 
 /* section map */
-
 .map {
 	position: relative;
 	min-height: 200px;
@@ -1137,7 +1125,6 @@ section {
 	cursor: pointer;
 }
 
-
 .footer-blogs {
 	margin-right: 80px;
 	width: 330px;
@@ -1160,7 +1147,6 @@ section {
 	margin-left: 20px;
 	width: 194px;
 }
-
 .footer-blogs-content {
 	color: #333333;
 	font-family: Montserrat;
@@ -1170,7 +1156,6 @@ section {
 	text-transform: uppercase;
 	margin-bottom: 5px;
 }
-
 .footer-blogs-date {
 	color: #999999;
 	font-family: Roboto;
