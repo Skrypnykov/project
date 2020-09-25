@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
 	<title>Portfolio</title>
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous"></script>
@@ -16,20 +19,20 @@
 		<div class="content-container">
 			<div class="logo">
 				<img src="img/logo.png" alt="" class="logo-img">
-				<h2 class="logo-title"><a href="#" class="logo-title-link">Raphael</a></h2>
+				<h2 class="logo-title"><a href="#home" class="logo-title-link">Raphael</a></h2>
 			</div>
 			<nav class="nav">
 				<ul class="nav-list">
 					<li class="nav-item"><a href="#about" class="nav-item-link">Über mich</a></li>
 					<li class="nav-item"><a href="#portfolio" class="nav-item-link">Portfolio</a></li>
 					<li class="nav-item"><a href="#contacts" class="nav-item-link">Kontakte</a></li>
-					<li class="nav-item"><a href="" class="nav-item-link"><img src="img/email.png" alt="email" class="nav-item-img"></a></li>
+					<li class="nav-item"><a href="#" class="nav-item-link"><img src="img/email.png" alt="email" class="nav-item-img"></a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	
-	<section class="banner">	
+	<section class="banner" id="home">	
 		<div class="background-image" style="background-image: url(img/bg2.png);"></div>
 		<div class="banner-container">
 			<div class="banner-title">Webentwickler für Front- und Backend</div>
@@ -37,11 +40,39 @@
 	</section>
 
 	<section class="about" id="about">
+		<div class="content-container">
+			<div class="about-left-column">
+				<h2 class="about-title">Hello!<br>Ich bin ein Webentwickler.</h2>
+				<hr class="about-line">
+				<p class="about-motto">Hier könnte Ihr Motto sein. Hier könnte Ihr Motto sein. Hier könnte Ihr Motto sein.</p>
+				<div class="about-social-wrapper">
+					<a class="about-social-link" href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+					<a class="about-social-link" href=""><i class="fa fa-behance" aria-hidden="true"></i></a>
+					<a class="about-social-link" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a class="about-social-link" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a class="about-social-link" href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="about-right-column">
+				<p class="about-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis tincidunt lobortis. Quisque at urna id quam ultricies ultricies at in justo. Nam molestie aliquam pulvinar. Fusce eu neque ac massa malesuada blandit eu eget purus. In finibus orci et tincidunt vehicula. Suspendisse euismod leo sit amet justo imperdiet viverra. </p>
+				<p class="about-content">Aliquam erat volutpat. Aenean ac aliquet neque. Donec ultricies efficitur eros ac hendrerit. Ut rhoncus mi imperdiet nisi eleifend condimentum. Donec sed sodales justo, vitae faucibus velit. Fusce neque lacus, fringilla in laoreet sit amet, sodales at metus. Vivamus at erat faucibus, tempor mauris nec, luctus ante. Etiam pharetra, erat eu viverra eleifend, tortor lacus semper lacus, quis convallis risus dui quis augue. Donec eu malesuada mauris.</p>
 
+				<div class="about-button"><a href="#portfolio" class="about-button-link">Portfolio</a><i class="about-button-arrow fa fa-long-arrow-right" aria-hidden="true"></i></div>
+				<div class="about-button"><a href="#" class="about-button-link">Lebenslauf</a></div>
+			</div>
+		</div>
 	</section>
 
 	<section class="portfolio" id="portfolio">
-
+		<div class="content-container">
+			<div class="portfolio-img"></div>
+			<div class="portfolio-right-column">
+				<h2 class="portfolio-title">Kinderkurse und Workshops.</h2>
+				<p class="portfolio-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mattis tincidunt lobortis. Quisque at urna id quam ultricies ultricies at in justo. Nam molestie aliquam pulvinar. Fusce eu neque ac massa malesuada blandit eu eget purus. In finibus orci et tincidunt vehicula. Suspendisse euismod leo sit amet justo imperdiet viverra.</p>
+				<a href="" class="portfolio-link">Zum Projekt<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+				<div class="portfolio-button"><a href="#" class="portfolio-button-link">Alle Portfolio anzeigen</a></div>
+			</div>
+		</div>
 	</section>
 
 	<section class="contacts" id="contacts">
