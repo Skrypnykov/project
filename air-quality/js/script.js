@@ -1,7 +1,7 @@
 $(document).ready(function(){
     const slider = $("#slider").owlCarousel({
-        items:1,
-        nav:false,
+        items:3,
+        nav:true,
         dots:true,
     });
 });
