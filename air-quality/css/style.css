@@ -11,6 +11,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+img {
+	max-width: 100%;
+}
 body {
 	background: rgba(0, 0, 0, 0.5);
 }
@@ -82,12 +85,10 @@ body {
 .hero-button-link:hover {
 	color: #d1d1d1;
 }
+
 /* section facts */
 .facts {
-	margin-top: 100px;
-}
-.facts-slider {
-	margin-bottom: 30px;
+	padding-top: 100px;
 }
 .facts-title {
 	font-family: Roboto;
@@ -157,11 +158,120 @@ body {
 	color: #B78A3F;
 }
 
+/* section quality */
+.quality {
+	padding-top: 100px;
+}
+.quality-title {
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 41px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.quality-map {
+	-text-align: center;
+	max-width: 100%;
+}
+.quality-content {
+	margin-top: 35px;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 27px;
+	color: #FFFFFF;
+}
+
+/* section politics */
+.politics {
+	padding-top: 100px;
+}
+.politics-title {
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 41px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.politics-content {
+	margin-top: 42px;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 27px;
+	color: #FFFFFF;
+}
+.politics-list {
+	margin: 27px 0 175px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.politics-item-wrapper {
+	margin-bottom: 15px;
+	cursor: pointer;
+	position: relative;
+}
+
+.politics-item-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 27%;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 30px;
+	color: #222222;
+	background: rgba(255, 255, 255, 0.83);
+}
+.politics-item-wrapper:hover .politics-item-title {
+	height: 100%;
+	margin-top: 0;
+}
+
+.politics-item-hover {
+	display: none;
+	position: absolute;
+	left: 85%;
+	width: 500px;
+	background-color: #DADADA;
+	padding: 16px 16px 16px 85px;
+	clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 5% 50%);
+	z-index: 1;
+}
+
+.politics-item-wrapper:nth-child(3n) .politics-item-hover {
+	left: initial;
+    right: 95%;
+	clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+	padding: 16px 85px 16px 16px;
+}
+.politics-item-wrapper:hover .politics-item-hover {
+	display: inline-block;
+	
+}
+.politics-item-content {
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #000000;
+}
+
+
 
 /* footer */
 .footer {
 	position: relative;
-	border-top: 2px solid #fff;
+	border-top: 1px solid #fff;
 }
 .footer-logo-wrapper {
 	display: flex;
